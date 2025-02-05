@@ -1,0 +1,47 @@
+.app-sidebar {
+  height: 100vh;
+}
+
+.sidebar-wrapper {
+  height: calc(100vh - 60px);
+  overflow-y: auto; 
+}
+
+.sidebar-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.sidebar-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebar-menu .sub-menu-open > .nav-treeview {
+  display: block;
+}
+
+#sub-menu-id {
+  padding-left: 3rem;
+}
+
+.SidbarToggler_mobile {
+  margin-left: 2rem;
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-collapse .app-sidebar {
+    display: none;
+  }
+
+  .SidbarToggler_mobile {
+    display: block;
+  }
+}
